@@ -2,13 +2,16 @@
     <head></head>
     <body>
         <h1>Child Browser Demo</h1>
-
+        <script>
+            alert('test1');
+        </script>
         <a onClick="launchBrowser()" href="#">What does it do?</a>
 
     </body>
     <script src="phonegap.js"></script>
     <script src="childbrowser.js"></script>
     <script>
+        alert('test');
         function launchBrowser() {
             alert(window.plugins.childBrowser != undefined)
             window.plugins.childBrowser.showWebPage('http://www.phonegap.com',
