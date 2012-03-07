@@ -8,9 +8,7 @@
     <script src="childbrowser.js"></script>
     <script>
         function launchBrowser() {
-            alert(window.plugins.childBrowser != undefined)
-            window.plugins.childBrowser.showWebPage('http://www.phonegap.com',
-            { showLocationBar: true });
+            window.plugins.childBrowser.openExternal('http://www.google.com')
         }
     </script>
 </html>
